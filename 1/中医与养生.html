@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fangzheng+Qingke+Benyuesongjianjian-Regular">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }    
+  .horizontal-text {
+  writing-mode: horizontal-tb; /* 横排文本 */
+  white-space: nowrap; /* 避免文字换行 */
+  position: absolute; /* 设置为绝对定位 */
+  top: 435px; /* 距离顶部50像素 */
+  left: 10px; /* 距离左侧20像素 */
+}
+.horizontal-text2 {
+  writing-mode: horizontal-tb; /* 横排文本 */
+  white-space: nowrap; /* 避免文字换行 */
+  position: absolute; /* 设置为绝对定位 */
+  top: 435px; /* 距离顶部50像素 */
+  left: 570px; /* 距离左侧20像素 */
+}
+
+        .btn-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 9999;
+        }
+
+        .btn-container button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .btn-container button:hover {
+            background-color: #0056b3;
+        }
+        .myButton {
+    width: 20px; /* 设置宽度 */
+    height: 100px; /* 设置高度 */
+    padding: 10px; /* 设置内边距 */
+}
+
+   
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+        <img src="中医与养生.png" alt="图片描述">
+       
+        <div class="horizontal-text">
+            <p1>中药:</p1><br>
+            <span>&emsp;&emsp;中药在中国古籍中通称“本草”。我国最早的一部中药学专著是汉代的<br>《神农本草经》，唐代由政府颁布的《新修本草》是世界上最早的药典。明代<br>李时珍的《本草纲目》，总结了16世纪以前的药物经验，对后世药物学的发展<br>做出了重大的贡献。</span><br><br>
+            </div>
+          <div class="horizontal-text2">
+            <p1> 养生:</p1><br>
+            <span>&emsp;中药的分类：中药按照功效可以分为补益类、清热类、祛湿类、理气类等多种类型。不同类型的<br>中药适用于不同的人群和症状。<br><br>
+              &emsp; 中药的使用注意事项：使用中药时需要注意剂量、用法和禁忌症等问题。建议在专业医生或中医师<br>的指导下使用中药，以确保安全有效。 总之，中药与养生是相辅相成的两个方面，通过合理地运用<br>中药可以达到更好的养生效果。
+          </div>
+
+          
+        
+    </div>
+    <div class="btn-container">
+      <button class="myButton" onclick="redirectToAnotherPage()">跳转到首页</button>
+  </div>
+    
+
+  <script>
+    function redirectToAnotherPage() {
+        window.location.href = "3.html"; // 更改为你想要跳转的页面URL
+    }
+</script> 
+</body>
+</html>
